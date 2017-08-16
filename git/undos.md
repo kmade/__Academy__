@@ -1,6 +1,6 @@
-If you've done a git add (files) and then commit them to the wrong branch, backing that out is easy:
+## USE WITH CAUTION
 
-### USE WITH CAUTION
+If you've done a git add (files) and then commit them to the wrong branch, backing that out is easy:
 
 ```bash
 git reset --soft HEAD~1
