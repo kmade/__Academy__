@@ -19,7 +19,8 @@ echo $LINE
 echo "Cipher" "Algo" "Fingerprint" | tablize
 echo $LINE
 
-sudo ssh-keygen -yf ${KEY} > tmp
+chmod 600 ${KEY}
+ssh-keygen -yf ${KEY} > tmp
 echo "RSA Fingerprint" | tablize
 ssh-keygen -lf tmp #todo tablize
 rm tmp
